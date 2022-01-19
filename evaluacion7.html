@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluación 7</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <h1>Evaluación Unidad VII</h1>
+    <form class="formulario">
+        <fieldset>
+            <legend>Informacion Personal</legend>
+            <br>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Tu Nombre" id="nombre" required pattern="[A-Za-z]{3,}">
+
+
+            <label for="nombre">Apellido</label>
+            <input type="text" placeholder="Tu Apellido" id="apellido">
+
+
+            <label for="email">E-mail </label>
+            <input type="email" placeholder="Tu E-mail" id="email" required
+                pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/">
+
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" placeholder="Tu Telefono" id="telefono" required
+                pattern="/ ^ \ (? (\ d {3}) \)? [-]? (\ d {3}) [-]? (\ d {4}) $ /">
+
+
+            <label for="mensaje">Mensaje</label>
+            <textarea placeholder=" Tu Mensaje" id="mensaje"></textarea>
+
+        </fieldset>
+
+        <input type="submit" onclick="validar()" value="Enviar" class="boton">
+
+    </form>
+
+    <script type="text/javascript" src="js/validacionFormulario.js"></script>
+
+
+</body>
+
+</html>
